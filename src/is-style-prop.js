@@ -14,11 +14,9 @@ import {
   View,
 } from 'react-native'
 // eslint-disable-next-line max-len
-import ViewStylePropTypes from 'react-native/Libraries/Components/View/ViewStylePropTypes'
-import TextStylePropTypes from 'react-native/Libraries/Text/TextStylePropTypes'
 
-const viewStyleProps = Object.keys(ViewStylePropTypes)
-const textStyleProps = Object.keys(TextStylePropTypes)
+const viewStyleProps = Object.keys(View.propTypes.style)
+const textStyleProps = Object.keys(Text.propTypes.style)
 
 const viewStyleComponents = [
   Animated.Image,
